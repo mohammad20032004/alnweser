@@ -1,0 +1,261 @@
+/* Certificates Section */
+.certificates-section {
+  padding: 2rem 0;
+}
+
+.certificate-card {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  position: relative;
+}
+
+.certificate-card:hover {
+  transform: translateY(-12px) scale(1.02);
+}
+
+.certificate-image {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+.certificate-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.certificate-card:hover .certificate-image img {
+  transform: scale(1.05);
+}
+
+.certificate-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(2px);
+}
+
+.certificate-card:hover .certificate-overlay {
+  opacity: 1;
+}
+
+.certificate-info {
+  background: linear-gradient(to bottom, #ffffff, #fafbfc);
+  padding: 1.5rem;
+  position: relative;
+}
+
+.certificate-info::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+}
+
+.certificate-title {
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.certificate-description {
+  color: #6b7280;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+
+/* Gallery Section */
+.gallery-section {
+  padding: 3rem 0;
+}
+
+.gallery-card {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.gallery-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-image {
+  position: relative;
+  overflow: hidden;
+  height: 280px;
+}
+
+.gallery-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-card:hover .gallery-image img {
+  transform: scale(1.1);
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-overlay-content {
+  text-align: center;
+  color: white;
+}
+
+.gallery-overlay-content i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.gallery-overlay-content h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.gallery-info {
+  padding: 1.5rem;
+  background: white;
+}
+
+.gallery-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-description {
+  color: #6b7280;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.gallery-category {
+  display: inline-block;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.02), rgba(37, 99, 235, 0.02));
+  padding: 3rem 0;
+  border-radius: 20px;
+}
+
+.testimonial-card {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.quote-icon i {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4a5568;
+  font-style: italic;
+}
+
+
+/* Modal Styling */
+#certificateModal .modal-content {
+  background: transparent;
+  border: none;
+}
+
+#certificateModal .modal-body {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#certificateModal .btn-close {
+  background: white;
+  opacity: 1;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .certificate-image {
+    height: 250px;
+  }
+  
+  .gallery-image {
+    height: 220px;
+  }
+  
+  .gallery-overlay-content i {
+    font-size: 2.5rem;
+  }
+  
+  .testimonial-text {
+    font-size: 1rem;
+  }
+}

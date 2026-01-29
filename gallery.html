@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>معرض المشاريع — شركة النويصر للتجارة والمقاولات</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/gallery.css">
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar border-bottom bg-n">
+    <div class="container d-flex justify-content-between align-items-center py-2">
+      <div class="contact-info d-flex align-items-center gap-3">
+        <small class="text-muted"><i class="bi bi-envelope-fill"></i> alnweser.co@gmail.com</small>
+        <small class="text-muted"><i class="bi bi-telephone-fill"></i> 0096351325391 / 00963933696093</small>
+      </div>
+      <div class="socials d-flex align-items-center gap-3">
+        <a href="#" class="text-muted"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-muted"><i class="bi bi-x"></i></a>
+        <a href="#" class="text-muted"><i class="bi bi-facebook"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <span class="brand-dot me-2"></span>
+        <strong>النويصر</strong>
+        <small class="ms-2 text-muted">للتجارة والمقاولات</small>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">خدماتنا</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html">مشاريعنا</a></li>
+          <li class="nav-item"><a class="nav-link" href="clients.html">عملاؤنا</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">شهادات</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="gallery-hero position-relative d-flex align-items-center" style="background: linear-gradient(rgba(0,123,255,0.7), rgba(0,123,255,0.8)), url('./public/Images/gvc مدارس/photo_17_2026-01-18_21-12-05.jpg') center/cover no-repeat; min-height: 50vh;">
+    <div class="container text-center text-white">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h1 class="display-4 fw-bold mb-3">معرض مشاريعنا المتميزة</h1>
+          <p class="lead fs-5 mb-4">استعرض أعمالنا المتميزة في مختلف المجالات من المدارس وخزانات المياه إلى أنظمة الصرف الصحي</p>
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <span class="badge bg-white bg-opacity-20 px-3 py-2 fs-6">
+              <i class="bi bi-building me-2"></i>25+ مدرسة
+            </span>
+            <span class="badge bg-white bg-opacity-20 px-3 py-2 fs-6">
+              <i class="bi bi-droplet-fill me-2"></i>15+ خزان مياه
+            </span>
+            <span class="badge bg-white bg-opacity-20 px-3 py-2 fs-6">
+              <i class="bi bi-water me-2"></i>10+ نظام صرف
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <main class="py-5">
+    <div class="container">
+      <!-- Filter Buttons -->
+      <div class="filter-buttons text-center mb-5">
+        <button class="filter-btn active" data-filter="all">الكل</button>
+        <button class="filter-btn" data-filter="schools">المدارس</button>
+        <button class="filter-btn" data-filter="water">خزانات المياه</button>
+        <button class="filter-btn" data-filter="sanitation">الصرف الصحي</button>
+      </div>
+
+      <!-- Quick Navigation -->
+      <div class="quick-nav text-center mb-4">
+        <a href="#gvc-schools" class="btn btn-outline-primary btn-sm me-2">مدارس GVC</a>
+        <a href="#pui-schools" class="btn btn-outline-primary btn-sm me-2">مدارس PUI</a>
+        <a href="#sif-schools" class="btn btn-outline-primary btn-sm me-2">مدارس SIF</a>
+        <a href="#drc-water" class="btn btn-outline-info btn-sm me-2">خزانات DRC</a>
+        <a href="#adra-sanitation" class="btn btn-outline-success btn-sm">صرف ADRA</a>
+      </div>
+
+      <!-- المدارس GVC -->
+      <section class="gallery-category mb-5" data-category="schools">
+        <div class="category-header mb-4">
+          <h2><i class="bi bi-building"></i> مدارس GVC</h2>
+          <p class="text-muted">مشاريع بناء وتجهيز المدارس بأعلى المعايير</p>
+        </div>
+        <div class="row g-3" id="gvc-schools"></div>
+      </section>
+
+      <!-- المدارس PUI -->
+      <section class="gallery-category mb-5" data-category="schools">
+        <div class="category-header mb-4">
+          <h2><i class="bi bi-building"></i> مدارس PUI</h2>
+          <p class="text-muted">مشاريع تعليمية متميزة</p>
+        </div>
+        <div class="row g-3" id="pui-schools"></div>
+      </section>
+
+      <!-- المدارس SIF -->
+      <section class="gallery-category mb-5" data-category="schools">
+        <div class="category-header mb-4">
+          <h2><i class="bi bi-building"></i> مدارس SIF</h2>
+          <p class="text-muted">بنية تحتية تعليمية حديثة</p>
+        </div>
+        <div class="row g-3" id="sif-schools"></div>
+      </section>
+
+      <!-- خزانات المياه DRC -->
+      <section class="gallery-category mb-5" data-category="water">
+        <div class="category-header mb-4">
+          <h2><i class="bi bi-droplet-fill"></i> خزانات المياه DRC</h2>
+          <p class="text-muted">حلول تخزين المياه المتطورة</p>
+        </div>
+        <div class="row g-3" id="drc-water"></div>
+      </section>
+
+      <!-- الصرف الصحي ADRA -->
+      <section class="gallery-category mb-5" data-category="sanitation">
+        <div class="category-header mb-4">
+          <h2><i class="bi bi-water"></i> الصرف الصحي ADRA</h2>
+          <p class="text-muted">أنظمة صرف صحي متكاملة وفعالة</p>
+        </div>
+        <div class="row g-3" id="adra-sanitation"></div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Modal للصور -->
+  <div class="modal fade" id="imageModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0">
+          <img src="" alt="" class="img-fluid w-100" id="modalImage">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="btn btn-primary position-fixed" style="bottom: 20px; left: 20px; z-index: 1000; border-radius: 50%; width: 50px; height: 50px; display: none;">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer class="footer bg-primary text-white pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <h5 class="mb-3">شركة النويصر للتجارة والمقاولات العامة</h5>
+          <p class="text-light">شركة رائدة في تقديم خدمات المقاولات والتجارة العامة مع التزام كامل بمواصفات الجودة العالمية.</p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-x"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h6>روابط سريعة</h6>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-light text-decoration-none">الرئيسية</a></li>
+            <li><a href="about.html" class="text-light text-decoration-none">من نحن</a></li>
+            <li><a href="services.html" class="text-light text-decoration-none">خدماتنا</a></li>
+            <li><a href="gallery.html" class="text-light text-decoration-none">مشاريعنا</a></li>
+            <li><a href="clients.html" class="text-light text-decoration-none">عملاؤنا</a></li>
+            <li><a href="testimonials.html" class="text-light text-decoration-none">شهادات</a></li>
+            <li><a href="contact.html" class="text-light text-decoration-none">اتصل بنا</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h6>خدماتنا الرئيسية</h6>
+          <ul class="list-unstyled">
+            <li><a href="services.html" class="text-light text-decoration-none">البنية التحتية</a></li>
+            <li><a href="services.html" class="text-light text-decoration-none">الاستيراد والتصدير</a></li>
+            <li><a href="services.html" class="text-light text-decoration-none">أجهزة الطاقة البديلة</a></li>
+            <li><a href="services.html" class="text-light text-decoration-none">الأجهزة الطبية</a></li>
+            <li><a href="services.html" class="text-light text-decoration-none">الخدمات النفطية</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h6>تواصل معنا</h6>
+          <div class="mb-3">
+            <h6 class="text-light small">دير الزور:</h6>
+            <p class="text-light mb-1 small"><i class="bi bi-geo-alt-fill me-2"></i>فيلات البلدية</p>
+            <p class="text-light mb-1 small"><i class="bi bi-telephone-fill me-2"></i>0096351325391</p>
+            <p class="text-light mb-2 small"><i class="bi bi-phone me-2"></i>00963933696093</p>
+          </div>
+          <div class="mb-3">
+            <h6 class="text-light small">دمشق:</h6>
+            <p class="text-light mb-1 small"><i class="bi bi-geo-alt-fill me-2"></i>عين الكرش - مقابل صيدلية بيازيد</p>
+            <p class="text-light mb-1 small"><i class="bi bi-telephone-fill me-2"></i>00963112332354</p>
+            <p class="text-light mb-2 small"><i class="bi bi-phone me-2"></i>00963940559922</p>
+          </div>
+          <div class="mb-3">
+            <h6 class="text-light small">الحسكة:</h6>
+            <p class="text-light mb-1 small"><i class="bi bi-geo-alt-fill me-2"></i>حي الديريين - مقابل المحافظة</p>
+            <p class="text-light mb-1 small"><i class="bi bi-telephone-fill me-2"></i>0096352314678</p>
+            <p class="text-light mb-2 small"><i class="bi bi-phone me-2"></i>00963940559922</p>
+          </div>
+          <div>
+            <p class="text-light mb-1 small"><i class="bi bi-envelope-fill me-2"></i>alnweser.co@gmail.com</p>
+            <p class="text-light small"><i class="bi bi-envelope me-2"></i>mahernweser@yahoo.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center py-3 border-top mt-4">
+        <small>© 2024 شركة النويصر للتجارة والمقاولات العامة. جميع الحقوق محفوظة.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/gallery.js"></script>
+</body>
+</html>mb-2 small"><i class="bi bi-phone me-2"></i>00963933696093</p>
+          </div>
+          <div class="mb-3">
+            <h6 class="text-muted small">دمشق:</h6>
+            <p class="text-muted mb-1 small"><i class="bi bi-geo-alt-fill me-2"></i>عين الكرش - مقابل صيدلية بيازيد</p>
+            <p class="text-muted mb-1 small"><i class="bi bi-telephone-fill me-2"></i>00963112332354</p>
+            <p class="text-muted mb-2 small"><i class="bi bi-phone me-2"></i>00963940559922</p>
+          </div>
+          <div class="mb-3">
+            <h6 class="text-muted small">الحسكة:</h6>
+            <p class="text-muted mb-1 small"><i class="bi bi-geo-alt-fill me-2"></i>حي الديريين - مقابل المحافظة</p>
+            <p class="text-muted mb-1 small"><i class="bi bi-telephone-fill me-2"></i>0096352314678</p>
+            <p class="text-muted mb-2 small"><i class="bi bi-phone me-2"></i>00963940559922</p>
+          </div>
+          <div>
+            <p class="text-muted mb-1 small"><i class="bi bi-envelope-fill me-2"></i>alnweser.co@gmail.com</p>
+            <p class="text-muted small"><i class="bi bi-envelope me-2"></i>mahernweser@yahoo.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center py-3 border-top mt-4">
+        <small>© 2024 شركة الويب للمقاولات. جميع الحقوق محفوظة.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="btn btn-primary position-fixed" style="bottom: 20px; left: 20px; z-index: 1000; display: none;">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/gallery.js"></script>
+</body>
+</html>

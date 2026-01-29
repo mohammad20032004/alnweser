@@ -7,19 +7,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/colors.css">
   </head>
   <body>
-    <div class="top-bar bg-light border-bottom">
+    <div class="top-bar border-bottom bg-n">
       <div class="container d-flex justify-content-between align-items-center py-2">
         <div class="contact-info d-flex align-items-center gap-3">
-          <small class="text-muted"><i class="bi bi-envelope-fill"></i> constructions@alweb.ai</small>
-          <small class="text-muted"><i class="bi bi-telephone-fill"></i> +966000000000</small>
+          <small class="text-muted"><i class="bi bi-envelope-fill"></i> alnweser.co@gmail.com</small>
+          <small class="text-muted"><i class="bi bi-telephone-fill"></i> 0096351325391 / 00963933696093</small>
         </div>
         <div class="socials d-flex align-items-center gap-3">
           <a href="#" class="text-muted"><i class="bi bi-instagram"></i></a>
           <a href="#" class="text-muted"><i class="bi bi-x"></i></a>
           <a href="#" class="text-muted"><i class="bi bi-facebook"></i></a>
-          <button id="langToggle" class="btn btn-sm btn-outline-secondary">English</button>
         </div>
       </div>
     </div>
@@ -28,8 +28,8 @@
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
           <span class="brand-dot me-2"></span>
-          <strong>alweb.ai</strong>
-          <small class="ms-2 text-muted">CONSTRUCTION</small>
+          <strong>النويصر</strong>
+          <small class="ms-2 text-muted">للتجارة والمقاولات</small>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
           <span class="navbar-toggler-icon"></span>
@@ -40,7 +40,7 @@
             <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
             <li class="nav-item"><a class="nav-link active" aria-current="page" href="services.html">خدماتنا</a></li>
-            <li class="nav-item"><a class="nav-link" href="projects.html">مشاريعنا</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">مشاريعنا</a></li>
             <li class="nav-item"><a class="nav-link" href="clients.html">عملاؤنا</a></li>
             <li class="nav-item"><a class="nav-link" href="testimonials.html">شهادات</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
@@ -51,10 +51,39 @@
 
     <main class="py-5">
       <div class="container">
+        <!-- Hero Section -->
+        <section class="text-center mb-5">
+          <h1 class="display-5 fw-bold text-primary mb-3">خدماتنا المتميزة</h1>
+          <p class="lead text-muted">نقدم مجموعة شاملة من الخدمات المتخصصة لتلبية احتياجاتكم في مختلف المجالات</p>
+        </section>
+
+        <!-- About Company Section -->
+        <section class="about-section mb-5">
+          <div class="row align-items-center">
+            <div class="col-md-6 order-md-2 mb-4 mb-md-0">
+              <div class="about-image position-relative">
+                <div class="decorative-shape"></div>
+                <img src="./public/Images/pipline.png" alt="مهندس" class="img-fluid rounded shadow">
+              </div>
+            </div>
+            <div class="col-md-6 order-md-1">
+              <h2>شركة النويصر للتجارة والمقاولات العامة</h2>
+              <p class="text-muted">
+                تجارة عامة - مقاولات عامة - استيراد و تصدير - أجهزة كهربائية وميكانيكية وأجهزة الطاقة البديلة والأجهزة
+                الإلكترونية وأجهزة طبية- إقامة المنشآت الصناعية - مواد الأمن والسلامة - خدمات إطعام - خدمات نفطية.
+              </p>
+              <p style="font-size: large;">
+                <b>بإدارة د. م .ماهر النويصر</b>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Services Section -->
         <section id="services" class="services-section my-5">
-          <div class="section-header d-flex justify-content-between align-items-center mb-4">
-            <h2>خدماتنا</h2>
-            <p class="text-muted mb-0">حلول متكاملة بدءًا من التصميم حتى التسليم النهائي.</p>
+          <div class="section-header text-center mb-5">
+            <h2 class="fw-bold text-primary">خدماتنا الشاملة</h2>
+            <p class="text-muted">حلول متكاملة بدءًا من التصميم حتى التسليم النهائي</p>
           </div>
 
           <div class="row g-4">
@@ -67,24 +96,67 @@
                 </div>
               </div>
             </div>
+
             <div class="col-md-4 col-lg-3">
               <div class="card service-card h-100">
                 <div class="card-body text-center">
-                  <div class="icon mb-3"><i class="bi bi-kanban fs-1"></i></div>
-                  <h5 class="card-title">إدارة المشاريع</h5>
-                  <p class="card-text text-muted">جدولة، مراقبة، وتنفيذ المشروع ضمن الوقت والميزانية.</p>
+                  <div class="icon mb-3"><i class="bi bi-globe fs-1"></i></div>
+                  <h5 class="card-title">الاستيراد والتصدير</h5>
+                  <p class="card-text text-muted">حلول لوجستية موثوقة تربط أسواقك المحلية بالعالم بسلاسة وكفاءة.</p>
                 </div>
               </div>
             </div>
+
             <div class="col-md-4 col-lg-3">
               <div class="card service-card h-100">
                 <div class="card-body text-center">
-                  <div class="icon mb-3"><i class="bi bi-house-heart fs-1"></i></div>
-                  <h5 class="card-title">التصميم الداخلي والخارجي</h5>
-                  <p class="card-text text-muted">حلول تصميم مبتكرة تجمع بين الجمال والوظيفة.</p>
+                  <div class="icon mb-3"><i class="bi bi-sun fs-1"></i></div>
+                  <h5 class="card-title">أجهزة الطاقة البديلة</h5>
+                  <p class="card-text text-muted">حلول طاقة مستدامة ومبتكرة تعتمد على مصادر متجددة لمستقبل أنظف.</p>
                 </div>
               </div>
             </div>
+
+            <div class="col-md-4 col-lg-3">
+              <div class="card service-card h-100">
+                <div class="card-body text-center">
+                  <div class="icon mb-3"><i class="bi bi-cpu fs-1"></i></div>
+                  <h5 class="card-title">الأجهزة الإلكترونية</h5>
+                  <p class="card-text text-muted">تقنيات إلكترونية متطورة تجمع بين الأداء العالي والابتكار الذكي.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+              <div class="card service-card h-100">
+                <div class="card-body text-center">
+                  <div class="icon mb-3"><i class="bi bi-heart-pulse fs-1"></i></div>
+                  <h5 class="card-title">الأجهزة الطبية</h5>
+                  <p class="card-text text-muted">معدات طبية دقيقة وموثوقة تدعم الرعاية الصحية بأعلى معايير الجودة.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+              <div class="card service-card h-100">
+                <div class="card-body text-center">
+                  <div class="icon mb-3"><i class="bi bi-fuel-pump fs-1"></i></div>
+                  <h5 class="card-title">الخدمات النفطية</h5>
+                  <p class="card-text text-muted">حلول متكاملة ومتخصصة لدعم قطاع النفط من الاستكشاف إلى التوزيع بكفاءة وأمان.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+              <div class="card service-card h-100">
+                <div class="card-body text-center">
+                  <div class="icon mb-3"><i class="bi bi-shield-check fs-1"></i></div>
+                  <h5 class="card-title">مواد الأمن والسلامة</h5>
+                  <p class="card-text text-muted">معدات ومستلزمات متطورة لضمان بيئة آمنة ومتوافقة مع أعلى معايير الحماية.</p>
+                </div>
+              </div>
+            </div>
+
             <div class="col-md-4 col-lg-3">
               <div class="card service-card h-100">
                 <div class="card-body text-center">
@@ -94,10 +166,148 @@
                 </div>
               </div>
             </div>
+
+            <div class="col-md-4 col-lg-3">
+              <div class="card service-card h-100">
+                <div class="card-body text-center">
+                  <div class="icon mb-3"><i class="bi bi-building fs-1"></i></div>
+                  <h5 class="card-title">إقامة المنشآت الصناعية</h5>
+                  <p class="card-text text-muted">تصميم وإنشاء منشآت صناعية متطورة تلبي احتياجات الإنتاج الحديث.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+              <div class="card service-card h-100">
+                <div class="card-body text-center">
+                  <div class="icon mb-3"><i class="bi bi-cup-hot fs-1"></i></div>
+                  <h5 class="card-title">خدمات الإطعام</h5>
+                  <p class="card-text text-muted">حلول إطعام شاملة ومتنوعة تناسب المؤسسات والفعاليات المختلفة.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+              <div class="card service-card h-100">
+                <div class="card-body text-center">
+                  <div class="icon mb-3"><i class="bi bi-lightning fs-1"></i></div>
+                  <h5 class="card-title">الأجهزة الكهربائية والميكانيكية</h5>
+                  <p class="card-text text-muted">توريد وتركيب أجهزة كهربائية وميكانيكية عالية الجودة والكفاءة.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+              <div class="card service-card h-100">
+                <div class="card-body text-center">
+                  <div class="icon mb-3"><i class="bi bi-shop fs-1"></i></div>
+                  <h5 class="card-title">التجارة العامة</h5>
+                  <p class="card-text text-muted">خدمات تجارية شاملة تغطي مختلف القطاعات والاحتياجات التجارية.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-us my-5">
+          <div class="text-center mb-5">
+            <h2 class="fw-bold text-primary">لماذا تختارنا؟</h2>
+            <p class="text-muted">نتميز بالخبرة والجودة والالتزام بالمواعيد</p>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="text-center">
+                <div class="icon mb-3"><i class="bi bi-award fs-1 text-primary"></i></div>
+                <h5>خبرة واسعة</h5>
+                <p class="text-muted">سنوات من الخبرة في تنفيذ المشاريع المتنوعة</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="text-center">
+                <div class="icon mb-3"><i class="bi bi-check-circle fs-1 text-primary"></i></div>
+                <h5>جودة عالية</h5>
+                <p class="text-muted">التزام بأعلى معايير الجودة في جميع أعمالنا</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="text-center">
+                <div class="icon mb-3"><i class="bi bi-clock fs-1 text-primary"></i></div>
+                <h5>التزام بالمواعيد</h5>
+                <p class="text-muted">تسليم المشاريع في الوقت المحدد دون تأخير</p>
+              </div>
+            </div>
           </div>
         </section>
       </div>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-primary text-white pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <h5 class="mb-3">شركة النويصر للتجارة والمقاولات العامة</h5>
+            <p class="text-light">شركة رائدة في تقديم خدمات المقاولات والتجارة العامة مع التزام كامل بمواصفات الجودة العالمية.</p>
+            <div class="d-flex gap-2 mt-3">
+              <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-x"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h6>روابط سريعة</h6>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-light text-decoration-none">الرئيسية</a></li>
+              <li><a href="about.html" class="text-light text-decoration-none">من نحن</a></li>
+              <li><a href="services.html" class="text-light text-decoration-none">خدماتنا</a></li>
+              <li><a href="gallery.html" class="text-light text-decoration-none">مشاريعنا</a></li>
+              <li><a href="clients.html" class="text-light text-decoration-none">عملاؤنا</a></li>
+              <li><a href="testimonials.html" class="text-light text-decoration-none">شهادات</a></li>
+              <li><a href="contact.html" class="text-light text-decoration-none">اتصل بنا</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h6>خدماتنا الرئيسية</h6>
+            <ul class="list-unstyled">
+              <li><a href="services.html" class="text-light text-decoration-none">البنية التحتية</a></li>
+              <li><a href="services.html" class="text-light text-decoration-none">الاستيراد والتصدير</a></li>
+              <li><a href="services.html" class="text-light text-decoration-none">أجهزة الطاقة البديلة</a></li>
+              <li><a href="services.html" class="text-light text-decoration-none">الأجهزة الطبية</a></li>
+              <li><a href="services.html" class="text-light text-decoration-none">الخدمات النفطية</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h6>تواصل معنا</h6>
+            <div class="mb-3">
+              <h6 class="text-light small">دير الزور:</h6>
+              <p class="text-light mb-1 small"><i class="bi bi-geo-alt-fill me-2"></i>فيلات البلدية</p>
+              <p class="text-light mb-1 small"><i class="bi bi-telephone-fill me-2"></i>0096351325391</p>
+              <p class="text-light mb-2 small"><i class="bi bi-phone me-2"></i>00963933696093</p>
+            </div>
+            <div class="mb-3">
+              <h6 class="text-light small">دمشق:</h6>
+              <p class="text-light mb-1 small"><i class="bi bi-geo-alt-fill me-2"></i>عين الكرش - مقابل صيدلية بيازيد</p>
+              <p class="text-light mb-1 small"><i class="bi bi-telephone-fill me-2"></i>00963112332354</p>
+              <p class="text-light mb-2 small"><i class="bi bi-phone me-2"></i>00963940559922</p>
+            </div>
+            <div class="mb-3">
+              <h6 class="text-light small">الحسكة:</h6>
+              <p class="text-light mb-1 small"><i class="bi bi-geo-alt-fill me-2"></i>حي الديريين - مقابل المحافظة</p>
+              <p class="text-light mb-1 small"><i class="bi bi-telephone-fill me-2"></i>0096352314678</p>
+              <p class="text-light mb-2 small"><i class="bi bi-phone me-2"></i>00963940559922</p>
+            </div>
+            <div>
+              <p class="text-light mb-1 small"><i class="bi bi-envelope-fill me-2"></i>alnweser.co@gmail.com</p>
+              <p class="text-light small"><i class="bi bi-envelope me-2"></i>mahernweser@yahoo.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center py-3 border-top mt-4">
+          <small>© 2024 شركة النويصر للتجارة والمقاولات العامة. جميع الحقوق محفوظة.</small>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="/js/main.js"></script>
