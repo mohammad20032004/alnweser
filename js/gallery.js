@@ -1,32 +1,32 @@
 // Gallery Data
 const galleryData = {
   'gvc-schools': {
-    folder: './public/Images/gvc مدارس/',
+    folder: './public/Images/schools-gvc/',
     count: 19,
     prefix: 'photo_',
     suffix: '_2026-01-18_21-12-05.jpg'
   },
   'pui-schools': {
-    folder: './public/Images/مدارس pui/',
+    folder: './public/Images/schools-pui/',
     count: 49,
     prefix: 'photo_',
     suffix: '_2026-01-18_21-11-28.jpg',
     suffix2: '_2026-01-18_21-11-29.jpg'
   },
   'sif-schools': {
-    folder: './public/Images/مدارس sif/',
+    folder: './public/Images/schools-sif/',
     count: 28,
     prefix: 'photo_',
     suffix: '_2026-01-18_21-35-22.jpg'
   },
   'drc-water': {
-    folder: './public/Images/drc خزان مياه/',
+    folder: './public/Images/water-tank-drc/',
     count: 13,
     prefix: 'photo_',
     suffix: '_2026-01-18_21-23-55.jpg'
   },
   'adra-sanitation': {
-    folder: './public/Images/صرف صحي adra/',
+    folder: './public/Images/sanitation-adra/',
     count: 16,
     prefix: 'photo_',
     suffix: '_2026-01-18_20-59-53.jpg'
