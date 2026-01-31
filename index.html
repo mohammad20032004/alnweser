@@ -36,9 +36,11 @@
     <div class="container">
       <!-- شعار على اليمين -->
       <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <span class="brand-dot me-2"></span>
-        <strong>النويصر</strong>
-        <small class="ms-2 text-muted">للتجارة والمقاولات</small>
+        <img src="./public/Logos/logo.png" alt="شعار النويصر" class="me-2" style="height: 80px; width: auto; margin-top: 2px;">
+        <div>
+          <strong>شركة النويصر</strong>
+          <small class="d-block text-muted" style="font-size: 0.75rem; line-height: 1;">للتجارة والمقاولات</small>
+        </div>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
         <span class="navbar-toggler-icon"></span>
@@ -230,6 +232,7 @@
     <h2 class="mb-4">عملاء نفخر بخدمتهم</h2>
     <div class="d-flex flex-wrap justify-content-center align-items-center g-5 py-3">
       <img src="/public/Images/clients/adra.png" alt="الهيئة العليا للإغاثة - أدرا" class="client-logo mx-3 flex-shrink-0 mb-4">
+      <img src="/public/Images/clients/who.jpg" alt="منظمة الصحة العالمية" class="client-logo mx-3 flex-shrink-0 mb-4">
       <img src="/public/Images/clients/drc.jpg" alt="اللجنة الدولية للصليب الأحمر" class="client-logo mx-3 flex-shrink-0 mb-4">
       <img src="/public/Images/clients/gvc.jpg" alt="شركة الخليج للمقاولات" class="client-logo mx-3 flex-shrink-0 mb-4">
       <img src="/public/Images/clients/pui.jpg" alt="منظمة أطباء بلا حدود" class="client-logo mx-3 flex-shrink-0 mb-4">
@@ -315,67 +318,112 @@
   </main>
 
   <!-- ======= Footer ======= -->
-  <footer class="footer bg-primary text-white pt-5">
+  <footer class="footer text-white pt-5 pb-4">
     <div class="container">
-      <div class="row">
-        <div class="col-md-3 mb-4">
-          <h5 class="mb-3">شركة النويصر للتجارة والمقاولات العامة</h5>
-          <p class="text-light">شركة رائدة في تقديم خدمات المقاولات والتجارة العامة مع التزام كامل بمواصفات الجودة.</p>
-          <div class="d-flex gap-2 mt-3">
-            <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="text-white"><i class="bi bi-x"></i></a>
-            <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+      <div class="row g-4">
+        <!-- معلومات الشركة -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-about">
+            <h5 class="mb-3">شركة النويصر</h5>
+            <p class="text-light mb-3" style="line-height: 1.8; color: rgba(255,255,255,0.75) !important;">
+              شريكك الموثوق في التجارة والمقاولات العامة. نقدم حلولاً متكاملة بأعلى معايير الجودة والاحترافية.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
           </div>
         </div>
-        <div class="col-md-3 mb-4">
+
+        <!-- روابط سريعة -->
+        <div class="col-lg-2 col-md-6">
           <h6>روابط سريعة</h6>
           <ul class="list-unstyled">
-            <li><a href="index.html" class="text-light text-decoration-none">الرئيسية</a></li>
-            <li><a href="about.html" class="text-light text-decoration-none">من نحن</a></li>
-            <li><a href="services.html" class="text-light text-decoration-none">خدماتنا</a></li>
-            <li><a href="gallery.html" class="text-light text-decoration-none">مشاريعنا</a></li>
-            <li><a href="clients.html" class="text-light text-decoration-none">عملاؤنا</a></li>
-            <li><a href="testimonials.html" class="text-light text-decoration-none">شهادات</a></li>
-            <li><a href="contact.html" class="text-light text-decoration-none">اتصل بنا</a></li>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="services.html">خدماتنا</a></li>
+            <li><a href="gallery.html">مشاريعنا</a></li>
+            <li><a href="clients.html">عملاؤنا</a></li>
+            <li><a href="testimonials.html">شهادات</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
           </ul>
         </div>
-        <div class="col-md-3 mb-4">
+
+        <!-- خدماتنا -->
+        <div class="col-lg-3 col-md-6">
           <h6>خدماتنا</h6>
           <ul class="list-unstyled">
-            <li><a href="services.html" class="text-light text-decoration-none">البنية التحتية</a></li>
-            <li><a href="services.html" class="text-light text-decoration-none">الاستيراد والتصدير</a></li>
-            <li><a href="services.html" class="text-light text-decoration-none">أجهزة الطاقة البديلة</a></li>
-            <li><a href="services.html" class="text-light text-decoration-none">الأجهزة الطبية</a></li>
+            <li><a href="services.html">البنية التحتية</a></li>
+            <li><a href="services.html">الاستيراد والتصدير</a></li>
+            <li><a href="services.html">الطاقة البديلة</a></li>
+            <li><a href="services.html">الأجهزة الطبية</a></li>
+            <li><a href="services.html">الخدمات النفطية</a></li>
           </ul>
         </div>
-        <div class="col-md-3 mb-4">
+
+        <!-- معلومات التواصل -->
+        <div class="col-lg-3 col-md-6">
           <h6>تواصل معنا</h6>
-          <div class="mb-3">
-            <h6 class="text-light small">دير الزور:</h6>
-            <p class="text-light mb-1 small"><i class="bi bi-geo-alt-fill me-2"></i>فيلات البلدية</p>
-            <p class="text-light mb-1 small"><i class="bi bi-telephone-fill me-2"></i>0096351325391</p>
-            <p class="text-light mb-2 small"><i class="bi bi-phone me-2"></i>00963933696093</p>
+          
+          <div class="contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div>
+              <strong style="color: #fff; display: block; margin-bottom: 0.25rem;">دير الزور</strong>
+              <span style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">فيلات البلدية</span>
+            </div>
           </div>
-          <div class="mb-3">
-            <h6 class="text-light small">دمشق:</h6>
-            <p class="text-light mb-1 small"><i class="bi bi-geo-alt-fill me-2"></i>عين الكرش - مقابل صيدلية بيازيد</p>
-            <p class="text-light mb-1 small"><i class="bi bi-telephone-fill me-2"></i>00963112332354</p>
-            <p class="text-light mb-2 small"><i class="bi bi-phone me-2"></i>00963940559922</p>
+          <div class="contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <div>
+              <a href="tel:0096351325391" style="color: rgba(255,255,255,0.75); text-decoration: none; display: block;">0096351325391</a>
+              <a href="tel:00963933696093" style="color: rgba(255,255,255,0.75); text-decoration: none; display: block;">00963933696093</a>
+            </div>
           </div>
-          <div class="mb-3">
-            <h6 class="text-light small">الحسكة:</h6>
-            <p class="text-light mb-1 small"><i class="bi bi-geo-alt-fill me-2"></i>حي الديريين - مقابل المحافظة</p>
-            <p class="text-light mb-1 small"><i class="bi bi-telephone-fill me-2"></i>0096352314678</p>
-            <p class="text-light mb-2 small"><i class="bi bi-phone me-2"></i>00963940559922</p>
+          
+          <div class="contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div>
+              <strong style="color: #fff; display: block; margin-bottom: 0.25rem;">دمشق</strong>
+              <span style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">عين الكرش - مقابل صيدلية بيازيد</span>
+            </div>
           </div>
-          <div>
-            <p class="text-light mb-1 small"><i class="bi bi-envelope-fill me-2"></i>alnweser.co@gmail.com</p>
-            <p class="text-light small"><i class="bi bi-envelope me-2"></i>mahernweser@yahoo.com</p>
+          <div class="contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <div>
+              <a href="tel:00963112332354" style="color: rgba(255,255,255,0.75); text-decoration: none; display: block;">00963112332354</a>
+              <a href="tel:00963940559922" style="color: rgba(255,255,255,0.75); text-decoration: none; display: block;">00963940559922</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div>
+              <strong style="color: #fff; display: block; margin-bottom: 0.25rem;">الحسكة</strong>
+              <span style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">حي الديريين - مقابل المحافظة</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <div>
+              <a href="tel:0096352314678" style="color: rgba(255,255,255,0.75); text-decoration: none; display: block;">0096352314678</a>
+              <a href="tel:00963940559922" style="color: rgba(255,255,255,0.75); text-decoration: none; display: block;">00963940559922</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <div>
+              <a href="mailto:alnweser.co@gmail.com" style="color: rgba(255,255,255,0.75); text-decoration: none; display: block;">alnweser.co@gmail.com</a>
+              <a href="mailto:mahernweser@yahoo.com" style="color: rgba(255,255,255,0.75); text-decoration: none; display: block;">mahernweser@yahoo.com</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="text-center py-3 border-top mt-4">
-        <small>© 2024 شركة النويصر للتجارة والمقاولات العامة. جميع الحقوق محفوظة.</small>
+
+      <div class="footer-bottom">
+        <small>© 2025 شركة النويصر للتجارة والمقاولات العامة - جميع الحقوق محفوظة</small>
       </div>
     </div>
   </footer>

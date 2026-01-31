@@ -6,14 +6,43 @@
     --red-primary: #dc2626;
     --red-secondary: #ef4444;
     --red-light: #fca5a5;
-    --blue-primary: #2563eb;
-    --blue-secondary: #3b82f6;
-    --blue-light: #93c5fd;
+    --blue-primary: #000080;
+    --blue-secondary: #0000a0;
+    --blue-light: #4d4dcc;
     --gray-50: #f9fafb;
     --gray-100: #f3f4f6;
     --gray-200: #e5e7eb;
     --gray-800: #1f2937;
     --gray-900: #111827;
+}
+
+/* Bootstrap Primary Color Override */
+.bg-primary {
+    background-color: #000080 !important;
+}
+
+.text-primary {
+    color: #000080 !important;
+}
+
+.btn-primary {
+    background-color: #000080;
+    border-color: #000080;
+}
+
+.btn-primary:hover {
+    background-color: #0000a0;
+    border-color: #0000a0;
+}
+
+.btn-outline-primary {
+    color: #000080;
+    border-color: #000080;
+}
+
+.btn-outline-primary:hover {
+    background-color: #000080;
+    border-color: #000080;
 }
 
 /* Global */
@@ -64,7 +93,7 @@ body {
 }
 
 .btn-cta {
-    background: var(--blue-primary);
+    background: #000080;
     border: none;
     color: white;
     font-weight: 600;
@@ -74,7 +103,7 @@ body {
 }
 
 .btn-cta:hover {
-    background: var(--blue-secondary);
+    background: #0000a0;
     transform: translateY(-2px);
     color: white;
 }
@@ -186,7 +215,7 @@ body {
 
 /* Contact form */
 .btn-gold {
-    background: var(--blue-primary);
+    background: #000080;
     border: none;
     color: white;
     padding: 10px 25px;
@@ -195,16 +224,17 @@ body {
 }
 
 .btn-gold:hover {
-    background: var(--blue-secondary);
+    background: #0000a0;
     transform: translateY(-2px);
     color: white;
 }
 
 /* Footer */
 .footer {
-    background: var(--gray-800);
+    background: linear-gradient(135deg, #000033 0%, #000066 100%);
     color: rgba(255, 255, 255, 0.9);
     position: relative;
+    overflow: hidden;
 }
 
 .footer::before {
@@ -213,17 +243,132 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: 3px;
-    background: var(--blue-primary);
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #000080, transparent);
+}
+
+.footer::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(0, 0, 128, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.footer .container {
+    position: relative;
+    z-index: 1;
+}
+
+.footer h5, .footer h6 {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.footer h5::after, .footer h6::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 2px;
+    background: #000080;
 }
 
 .footer a {
-    color: rgba(255, 255, 255, 0.8);
-    transition: color 0.3s ease;
+    color: rgba(255, 255, 255, 0.75);
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
 }
 
 .footer a:hover {
-    color: white;
+    color: #fff;
+    transform: translateX(-5px);
+    text-decoration: none;
+}
+
+.footer .list-unstyled li {
+    margin-bottom: 0.75rem;
+    padding-right: 1rem;
+    position: relative;
+}
+
+.footer .list-unstyled li::before {
+    content: '◀';
+    position: absolute;
+    right: 0;
+    color: #ffffff;
+    font-size: 0.6rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.footer .list-unstyled li:hover::before {
+    opacity: 1;
+}
+
+.footer .social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.footer .social-links a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    transform: translateX(0);
+}
+
+.footer .social-links a:hover {
+    background: #000080;
+    transform: translateY(-3px) translateX(0);
+    box-shadow: 0 5px 15px rgba(0, 0, 128, 0.3);
+}
+
+.footer .contact-item {
+    display: flex;
+    align-items: start;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.footer .contact-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.footer .contact-item i {
+    color: #000080;
+    margin-left: 0.75rem;
+    font-size: 1.1rem;
+    margin-top: 0.2rem;
+}
+
+.footer-bottom {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.footer-bottom small {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
 }
 
 @media (max-width:768px) {
