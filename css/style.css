@@ -63,6 +63,38 @@ body {
     color: var(--muted) !important
 }
 
+/* Top bar responsive */
+@media (max-width: 991px) {
+    .top-bar .container {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    
+    .top-bar .contact-info {
+        flex-direction: column;
+        gap: 0.5rem !important;
+    }
+    
+    .top-bar small {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .top-bar {
+        font-size: 0.7rem;
+    }
+    
+    .top-bar .contact-info small:last-child {
+        display: none;
+    }
+    
+    .top-bar .socials a {
+        font-size: 0.75rem;
+    }
+}
+
 /* Brand */
 .brand-dot {
     width: 10px;
@@ -477,6 +509,28 @@ body {
     height: 3px;
     background: var(--blue-primary);
     border-radius: 2px;
+}
+
+/* Section header responsive */
+@media (max-width: 768px) {
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .section-header p {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-header h2 {
+        font-size: 1.25rem;
+    }
+    
+    .section-header p {
+        font-size: 0.85rem;
+    }
 }
 
 /* تأثيرات الحركة للمشاريع */
