@@ -244,75 +244,6 @@
 
      
 
-      <!-- ======= Contact Section ======= -->
-      
-        <section id="contact" class="contact-section my-5">
-          <div class="row">
-            <div class="col-md-6">
-              <h3>تواصل معنا</h3>
-              <p class="text-muted">للاستفسارات وطلبات المشاريع، تواصل معنا عبر الوسائل التالية.</p>
-              
-              <div class="mb-4">
-                <h5 class="text-primary">مكاتبنا:</h5>
-                
-                <div class="mb-3">
-                  <h6 class="fw-bold">دير الزور:</h6>
-                  <ul class="list-unstyled">
-                    <li><i class="bi bi-geo-alt-fill me-2 text-primary"></i>فيلات البلدية</li>
-                    <li><i class="bi bi-telephone-fill me-2 text-primary"></i>0096351325391</li>
-                    <li><i class="bi bi-phone me-2 text-primary"></i>00963933696093</li>
-                  </ul>
-                </div>
-                
-                <div class="mb-3">
-                  <h6 class="fw-bold">دمشق:</h6>
-                  <ul class="list-unstyled">
-                    <li><i class="bi bi-geo-alt-fill me-2 text-primary"></i>عين الكرش - مقابل صيدلية بيازيد</li>
-                    <li><i class="bi bi-telephone-fill me-2 text-primary"></i>00963112332354</li>
-                    <li><i class="bi bi-phone me-2 text-primary"></i>00963940559922</li>
-                  </ul>
-                </div>
-                
-                <div class="mb-3">
-                  <h6 class="fw-bold">الحسكة:</h6>
-                  <ul class="list-unstyled">
-                    <li><i class="bi bi-geo-alt-fill me-2 text-primary"></i>حي الديريين - مقابل المحافظة</li>
-                    <li><i class="bi bi-telephone-fill me-2 text-primary"></i>0096352314678</li>
-                    <li><i class="bi bi-phone me-2 text-primary"></i>00963940559922</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h6 class="fw-bold">البريد الإلكتروني:</h6>
-                  <ul class="list-unstyled">
-                    <li><i class="bi bi-envelope-fill me-2 text-primary"></i>alnweser.co@gmail.com</li>
-                    <li><i class="bi bi-envelope me-2 text-primary"></i>mahernweser@yahoo.com</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <form class="row g-2">
-                <div class="col-12">
-                  <input class="form-control" placeholder="الاسم" aria-label="الاسم">
-                </div>
-                <div class="col-12 col-md-6">
-                  <input class="form-control" placeholder="البريد الإلكتروني" aria-label="البريد الإلكتروني">
-                </div>
-                <div class="col-12 col-md-6">
-                  <input class="form-control" placeholder="رقم الهاتف" aria-label="رقم الهاتف">
-                </div>
-                <div class="col-12">
-                  <textarea class="form-control" rows="4" placeholder="رسالتك..."></textarea>
-                </div>
-                <div class="col-12 text-start">
-                  <button class="btn btn-gold">أرسل الرسالة</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </section>
-   
     </div>
   </main>
 
@@ -428,6 +359,55 @@
 
   <!-- Bootstrap JS bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    // تهيئة EmailJS
+    emailjs.init('YOUR_PUBLIC_KEY'); // ستحتاج لاستبدال هذا بـ Public Key الخاص بك
+    
+    // معالج إرسال النموذج في الصفحة الرئيسية
+    document.getElementById('contactFormHome').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const submitBtn = document.getElementById('submitBtnHome');
+      const btnText = submitBtn.querySelector('.btn-text');
+      const spinner = submitBtn.querySelector('.spinner-border');
+      const messageAlert = document.getElementById('messageAlertHome');
+      
+      // إظهار حالة التحميل
+      submitBtn.disabled = true;
+      btnText.textContent = 'جاري الإرسال...';
+      spinner.classList.remove('d-none');
+      messageAlert.classList.add('d-none');
+      
+      // إرسال البريد الإلكتروني
+      emailjs.sendForm('service_xhqate4', 'YOUR_TEMPLATE_ID', this)
+        .then(function(response) {
+          console.log('تم الإرسال بنجاح!', response.status, response.text);
+          
+          // إظهار رسالة النجاح
+          messageAlert.className = 'alert alert-success';
+          messageAlert.textContent = 'تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.';
+          messageAlert.classList.remove('d-none');
+          
+          // إعادة تعيين النموذج
+          document.getElementById('contactFormHome').reset();
+          
+        }, function(error) {
+          console.log('فشل الإرسال...', error);
+          
+          // إظهار رسالة الخطأ
+          messageAlert.className = 'alert alert-danger';
+          messageAlert.textContent = 'حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة مرة أخرى.';
+          messageAlert.classList.remove('d-none');
+          
+        }).finally(function() {
+          // إعادة تعيين حالة الزر
+          submitBtn.disabled = false;
+          btnText.textContent = 'أرسل الرسالة';
+          spinner.classList.add('d-none');
+        });
+    });
+  </script>
   <!-- Custom JS -->
   <script type="module" src="/js/main.js"></script>
 </body>
