@@ -153,7 +153,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(0, 0, 128, 0.8), rgba(0, 0, 160, 0.9));
+  background: linear-gradient(135deg, rgba(0, 0, 128, 0.653), rgba(0, 0, 160, 0.459));
   z-index: 1;
 }
 
