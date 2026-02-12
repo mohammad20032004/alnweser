@@ -233,12 +233,38 @@
   overflow: hidden;
 }
 
-#certificateModal .btn-close {
-  background: white;
-  opacity: 1;
-  border-radius: 50%;
-  padding: 10px;
-  margin: 10px;
+/* تنسيق زر الإغلاق */
+.custom-close {
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 1;
+    padding: 12px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1055;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-close:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* إزالة كلمة Modal Header */
+.modal-header {
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* Responsive */

@@ -493,12 +493,19 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* تحسين النماذج */
+/* Contact form RTL fix */
 .form-control {
+    text-align: right;
+    direction: rtl;
     border: 2px solid var(--gray-200);
     border-radius: 8px;
     transition: all 0.3s ease;
     padding: 12px 15px;
+}
+
+.form-control::placeholder {
+    text-align: right;
+    direction: rtl;
 }
 
 .form-control:focus {
