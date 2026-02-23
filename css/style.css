@@ -631,3 +631,39 @@ body {
   background: var(--gradient-red-blue);
   border-radius: 2px;
 }
+
+
+/* Back to Top Button - Fixed */
+#backToTop {
+    bottom: 30px !important;
+    left: 30px !important;
+    z-index: 1000 !important;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    background: linear-gradient(135deg, #000080, #0000a0) !important;
+    border: none !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 128, 0.4) !important;
+    transition: all 0.3s ease !important;
+}
+
+#backToTop:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 128, 0.6) !important;
+    background: linear-gradient(135deg, #0000a0, #0000c0) !important;
+}
+
+#backToTop i {
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
+    color: white !important;
+}
+
+@media (max-width: 768px) {
+    #backToTop {
+        bottom: 20px !important;
+        left: 20px !important;
+        width: 45px !important;
+        height: 45px !important;
+    }
+}
