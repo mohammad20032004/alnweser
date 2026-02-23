@@ -667,3 +667,22 @@ body {
         height: 45px !important;
     }
 }
+
+
+/* View More Card */
+.view-more-card {
+    transition: all 0.3s ease;
+}
+
+.view-more-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 128, 0.5);
+}
+
+.view-more-card i {
+    transition: transform 0.3s ease;
+}
+
+.view-more-card:hover i {
+    transform: scale(1.2);
+}
