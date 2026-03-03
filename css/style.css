@@ -152,6 +152,7 @@ body {
     z-index: 0;
     border-radius: 16px;
     opacity: 0.3;
+    display: none;
 }
 
 .about-image img {
