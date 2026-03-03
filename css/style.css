@@ -107,7 +107,7 @@ body {
 /* Hero */
 .hero-section {
     min-height: 80vh;
-    background-image: url('/public/Images/hero-bg.png');
+    background-image: url('/public/Images/hero-bg.webP');
     background-size: cover;
     background-position: center;
     position: relative;
